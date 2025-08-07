@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f8bbd0, #c8e6c9);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.lock-screen {
+  text-align: center;
+}
+
+.date-background {
+  background-image: url('heart_lock.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220px;
+  width: 220px;
+  height: 240px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-background input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.intro-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #ec407a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+.hidden {
+  display: none;
+}
+
+.heart-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.circle-button {
+  background: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 1.5rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.confetti::after {
+  content: '🎊🎊🎊';
+  font-size: 2rem;
+  animation: pop 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes pop {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}

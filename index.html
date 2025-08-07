@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta de Cumpleaños 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="lock-screen" class="lock-screen">
+      <div class="date-background">
+        <input type="date" id="dobInput" />
+      </div>
+      <p class="intro-text">Ingresa tu fecha de cumpleaños para ver tu sorpresa 🎁</p>
+      <button onclick="unlock()">Desbloquear</button>
+    </div>
+
+    <div id="main-content" class="hidden">
+      <div class="heart-card">
+        <h1>💌 Una carta que nace del corazón 💌</h1>
+        <div class="buttons">
+          <button class="button" onclick="showCard()">🎉 Carta</button>
+          <button class="button" onclick="showGallery()">📸 Fotos</button>
+        </div>
+        <div id="card-content" class="hidden">
+          <div class="confetti"></div>
+          <h2>¡Feliz 21 cumpleaños, mi hermanita! 🎂</h2>
+          <p>
+Querida hermana,
+
+Hoy celebro no solo el día que naciste, sino todo lo que has sido desde entonces. Cada sonrisa tuya ha iluminado mis días, cada abrazo ha sido un refugio. Eres más que una hermana, eres mi amiga, mi confidente, mi alegría diaria. Verte crecer, luchar, y brillar me llena de orgullo y amor.
+
+Gracias por ser tú, por existir, por ser la luz que transforma cualquier sombra en esperanza. Hoy, deseo que el universo te devuelva todo lo bueno que das, multiplicado por mil.
+
+¡Feliz cumpleaños! Nunca olvides cuánto te amo. 💖
+
+Con todo mi corazón,
+Tu persona favorita ✨</p>
+        </div>
+        <div id="gallery-content" class="hidden">
+          <div class="gallery">
+            <img src="/Naty (1).jpeg" />
+            <img src="/Naty (2).jpeg" />
+            <img src="/Naty (3).jpeg" />
+            <img src="/Naty (4).jpeg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
